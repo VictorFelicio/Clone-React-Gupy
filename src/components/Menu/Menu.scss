@@ -1,0 +1,116 @@
+@import '../../sass/variable';
+
+.header_nav_menu {
+  display: flex;
+  align-items: center;
+}
+
+.myVacanciesLink.isActiveUrl {
+  color: #13335f;
+}
+
+a {
+  color: $fc-primary;
+  font-size: $fnt-sm;
+  text-decoration: none;
+
+  &:hover {
+    color: #13335f;
+  }
+}
+
+span {
+  display: flex;
+  align-items: center;
+  color: $fc-primary;
+  font-size: $fnt-md;
+  padding-inline: 6px;
+  padding-block: 6px;
+  &:hover {
+    background: rgb(214, 243, 249);
+    border-radius: 5px;
+  }
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 24px;
+
+  font-family: 'Lato';
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 0 none;
+
+  font-size: $fnt-ext-sm;
+  font-weight: 700;
+
+  color: #fff;
+  background-color: rgb(87, 139, 222);
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .vacanciesExternalLink,
+  .myVacanciesLink {
+    display: none;
+  }
+
+  #card-click {
+    height: 100vh;
+    width: calc(100% - 32px);
+    top: 0;
+    right: 0;
+    left: auto;
+    flex: 1 0 auto;
+  }
+
+  .box-vacancies-card {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: rgb(19, 51, 95);
+      font-size: 1.6rem;
+      padding: 4px 12px;
+      cursor: pointer;
+      height: 40px;
+      border-radius: 4px;
+      margin-top: 6px;
+      &:hover {
+        background-color: rgb(214, 243, 249);
+      }
+    }
+  }
+  .body-card-click {
+    flex: 1 1 0%;
+    padding-bottom: 23rem;
+  }
+}
+
+.vacanciesExternalLink {
+  margin-right: 24px;
+  padding-inline: 16px;
+  position: relative;
+}
+
+.myVacanciesLink {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 16px;
+  position: relative;
+}
+
+.isActiveUrl::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 40px;
+  background: #13335f;
+  height: 2px;
+  border-radius: 10px;
+}

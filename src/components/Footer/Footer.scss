@@ -1,0 +1,18 @@
+@import '../../sass/variable';
+
+footer {
+    display: flex;
+    border-top: 1px solid #dddddd;
+    color: #a7a7a7;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 22px 48px;
+    justify-content: end;
+    max-height: 60px;
+
+    & span {
+        font-size: 13px;
+        color: #a7a7a7;
+    }
+}

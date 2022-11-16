@@ -1,0 +1,110 @@
+#card-click {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: 63px;
+    right: 14px;
+    width: 310px;
+    min-height: 300px;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    box-sizing: border-box;
+    box-shadow: rgb(0 0 0 / 10%) 4px 4px 24px;
+    border-radius: 4px;
+}
+#card-click.active {
+    visibility: visible;
+}
+i {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    right: 15px;
+    border-bottom: 10px solid rgb(238, 238, 238);
+    border-top-width: 10px;
+    margin-top: -10px;
+}
+#i {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    right: 15px;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    border-top-width: 10px;
+    margin-top: -8px;
+}
+#header-card-click {
+    padding: 24px 16px;
+}
+.body-card-click {
+    padding: 24px 16px;
+}
+.footer-card-click {
+    padding: 24px 16px;
+}
+#header-card-click,
+.body-card-click {
+    border-bottom: 1px solid #dddddd;
+}
+#header-card-click .name-header {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: rgb(74, 74, 74);
+    line-height: 19px;
+}
+#header-card-click .btn-edit-perfil {
+    font-size: 1.4rem;
+    color: rgb(19, 51, 95);
+    cursor: pointer;
+    margin-top: 4px;
+}
+.body-card-btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    color: rgb(74, 74, 74);
+}
+.body-card-btn img {
+    margin-right: 16px;
+}
+.body-card-title {
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin: 0 0 7px;
+}
+.footer-card-data {
+    color: rgb(19, 51, 95);
+    font-size: 1.6rem;
+    padding: 4px 12px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 4px;
+}
+.footer-card-con-pol {
+    padding: 1px 0 0 12px;
+    cursor: pointer;
+    text-decoration-line: underline;
+    color: #4a4a4a;
+    font-size: 1.2rem;
+}
+.footer-card-data:hover {
+    background-color: rgb(214, 243, 249);
+}
+.footer-card-con-pol:hover {
+    color: #a7a7a7;
+}
+.box-vacancies-card {
+    display: none;
+}
+.box-btn-header {
+    display: none;
+}

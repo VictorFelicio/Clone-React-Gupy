@@ -1,0 +1,134 @@
+@import '../../sass/variable';
+
+.card_container_card {
+    display: flex;
+
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+    min-height: 357px;
+
+    flex: 0 0 auto;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 1199px) {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+        max-width: 100%;
+
+        min-height: 320px;
+
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+}
+
+.card_myVacancies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    height: auto;
+
+    cursor: pointer;
+
+    background-color: $bg-primary-color;
+
+    border: solid 1px #eee;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #0000001f;
+}
+
+.card_myVacancies_info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+}
+
+.card_job_title {
+    font-size: $fnt-sm;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    color: $fc-secondary;
+
+    overflow: hidden;
+
+    margin-bottom: 11px;
+}
+
+.card_job_description,
+.card_job_location {
+    display: flex;
+    align-items: center;
+
+    font-size: $fnt-ext-sm;
+    letter-spacing: 0.3px;
+
+    margin: 0 0 4px;
+
+    color: $fc-tertiary;
+
+    span {
+        color: $fc-tertiary;
+        margin-right: 7px;
+    }
+}
+
+.card_job_location {
+    margin: 0 0 0;
+}
+
+.card_buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 22px;
+    gap: 16px;
+}
+
+.btn_giveUp {
+    background-color: $bg-primary-color;
+    color: #13335f;
+    font-size: $fnt-ext-sm;
+    border-radius: 4px;
+    font-weight: 500;
+    border: none;
+    height: 32px;
+    line-height: 32px;
+    min-height: 32px;
+    min-width: 96px;
+    padding: 0 16px;
+
+    &:hover {
+        background-color: rgba(19, 51, 95, 0.08);
+    }
+}
+
+.btn_see {
+    background-color: #13335f;
+    color: #fff;
+
+    font-size: $fnt-ext-sm;
+    font-weight: 500;
+
+    border-radius: 4px;
+    border: none;
+    height: 32px;
+    min-height: 32px;
+    min-width: 129px;
+
+    line-height: 32px;
+
+    padding: 0 16px;
+
+    &:hover {
+        background-color: #061c39;
+    }
+}
